@@ -16,7 +16,6 @@ perfect_sudoku = np.array([[1, 2, 3, 4, 5, 6, 7, 8, 9],
 index_combinations = [list(itertools.product(*block))
                       for block in
                       itertools.product([[0, 1, 2], [3, 4, 5], [6, 7, 8]], [[0, 1, 2], [3, 4, 5], [6, 7, 8]])]
-
 good_axis = set(range(1, 10))
 
 
@@ -30,8 +29,7 @@ def check_sudoku(original_sudoku):
 print(check_sudoku(perfect_sudoku))
 row_length = list(range(1, 10))
 sudoku = np.array([sample(row_length, 9) for __ in range(9)])
-print(sudoku)
 for x in range(1000000):
     sudoku = np.array([sample(row_length, 9) for __ in range(9)])
     if check_sudoku(sudoku):
-        print(x)
+        print(sudoku)
