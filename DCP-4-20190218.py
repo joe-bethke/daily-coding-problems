@@ -8,7 +8,7 @@ You can modify the input array in-place.
 
 
 def solve(lis):
-    positive_ints = sorted(list(set([i for i in lis if i > 0])))
+    positive_ints = sorted({i for i in lis if i > 0})
     offset = min(positive_ints, default=0)
     return next(((n + offset) for n, i in enumerate(positive_ints) if (n + offset) != i),
                 (max(positive_ints, default=0) + 1))
