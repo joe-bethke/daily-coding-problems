@@ -15,8 +15,7 @@ class Log:
         self.records.append(order_id)
 
     def get_last(self, i=0):
-        # Return the last element if i is 0
-        # Return the next element for all positive values
+        # i=0 is the very last elemnt
         record = self.records[-(i + 1)] if i != 0 else self.records[-1]
         print(record)
         return record
