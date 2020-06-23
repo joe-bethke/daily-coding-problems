@@ -15,7 +15,7 @@ jobs:
           github_token: "${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}"
           ado_organization: "3M-Bluebird"
           ado_project: "AzurePlatform"
-          ado_area_path: "Platform 5.X\\"
+          ado_area_path: "AzurePlatform"
           ado_wit: "User Story"
           ado_new_state: "New"
           ado_close_state: "Closed"
